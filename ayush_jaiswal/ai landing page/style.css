@@ -239,7 +239,9 @@ body {
 /*overall*/
 
 .overall {
-    background-color: #B4D7FF;
+    /* background-color: #B4D7FF */
+    background-color: #1f2536;
+    /* color: white; */
     border: 1px solid black;
     /* border-radius: 25px; */
     width: auto;
@@ -255,7 +257,7 @@ body {
     grid-gap: 2rem;
     margin-top: 1.3rem;
     place-items: center;
-    background-color: #ccc;
+    /* background-color: #ccc; */
     background-color: transparent;
     border-radius: 25px;
 }
@@ -264,11 +266,12 @@ body {
 .other {
     display: flex;
     justify-content: center;
+
 }
 
 .other h2 {
     font-size: 40px;
-    color: rgb(0, 0, 0);
+    color: white;
     padding: 10px 10px;
 }
 
@@ -287,31 +290,26 @@ body {
     min-height: 40vh;
     width: 100%;
     transition: transform 0.3s ease;
+    opacity: 50% ;
+}
+.feature-description{
+    visibility: hidden ;
 }
 
 .feature-card:hover {
     transform: scale(1.05);
+    opacity: 100%;
+    cursor: pointer;
+
+    .feature-description{
+        visibility: visible;
+    }
 }
 
 .feature-info {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-}
-
-.icon-container {
-    background-color: var(--background-color);
-    height: 3rem;
-    width: 3rem;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.feature-png {
-    width: 60px;
-    height: 60px;
 }
 
 .feature-title {
@@ -543,7 +541,7 @@ ul li {
     width: 100%;
     min-height: 100vh;
     height: auto;
-    margin: 10px;
+    /* margin: 10px; */
     /* background-color: #5251D3; */
 
 }
@@ -649,4 +647,29 @@ ul li {
 .form-container .confirmation {
     color: green;
     font-size: 16px;
+}
+
+.reviews {
+    display: flex;
+    height: auto;
+    width: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.headingg{
+    font-size: 35px;
+}
+
+.review-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.review-card{
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
 }
